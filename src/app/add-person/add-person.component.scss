@@ -1,0 +1,110 @@
+/* Container */
+.container {
+    background-color: #fff;
+    width: 600px;
+    margin: 80px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  /* Header */
+  .header {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Form Layout */
+  form {
+    padding: 30px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  input, select, textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  /* Row Layout */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .row div {
+    flex: 1;
+  }
+  
+  /* Buttons */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 120px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button.reset {
+    background-color: #ccc;
+  }
+  
+  button.reset:hover {
+    background-color: #999;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .container {
+      width: 100%;
+      margin: 20px;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  }
+  

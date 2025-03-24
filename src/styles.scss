@@ -1,0 +1,29 @@
+.container {
+    max-width: 80%;
+    margin: auto;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background: #eee;
+  }
+  .add-person {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    float: right;
+  }
+  

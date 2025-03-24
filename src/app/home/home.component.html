@@ -1,0 +1,26 @@
+<!-- Add Person Button -->
+<button routerLink="/add-person">+ Add Person</button>
+
+<!-- Contact Details Table -->
+<h2>Address Book Contacts</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Full Name</th>
+      <th>Phone Number</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let contact of contacts">
+      <td>{{ contact.id }}</td>
+      <td>{{ contact.name }}</td>  <!--  Fixed property -->
+      <td>{{ contact.phone }}</td> <!--  Fixed property -->
+      <td>
+        <button (click)="editContact(contact.id)">Edit</button>
+        <button (click)="deleteContact(contact.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

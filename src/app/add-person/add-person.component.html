@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="header">
+      <span>PERSON FORM</span>
+      <button type="button" (click)="navigateBack()">✖</button>
+    </div>
+  
+    <form #personForm="ngForm" (ngSubmit)="addPerson()" novalidate>
+      <label>Full Name</label>
+      <input type="text" name="name" [(ngModel)]="newPerson.name" required />
+      <div *ngIf="personForm.controls['name']?.invalid && personForm.controls['name']?.touched">
+        <small class="error">Full name is required.</small>
+      </div>
+  
+      <label>Phone Number</label>
+      <input type="text" name="phone" [(ngModel)]="newPerson.phone" pattern="[0-9]{10}" required />
+      <div *ngIf="personForm.controls['phone']?.invalid && personForm.controls['phone']?.touched">
+        <small class="error">Phone number must be 10 digits.</small>
+      </div>
+  
+      <div class="button-group">
+        <button type="submit" [disabled]="personForm.invalid">Add</button>
+      </div>
+    </form>
+  </div>
+  
